@@ -1,0 +1,196 @@
+                                    /* START GLOBAL  */
+body {font-family: 'Cairo', sans-serif;height:6000px; }
+img {max-width: 100%;}
+
+                                    /* END GLOBAL  */
+                                    /* START UPPER BAR  */
+.upper-bar {background-color: #2d3e50;color :#bfc3c8;padding: 7px; font-weight: bold;}
+.upper-bar a {text-decoration: none;}
+.upper-bar .arabic {color: #b12b2f;outline: none;}
+.upper-bar .english {color:#4c6179;position: relative;}
+.upper-bar .english::before {
+    content: "";
+    width: 1px;
+    height: 30px;
+    background-color: #4c6179;
+    position: absolute;
+    right: -3px;
+
+}
+.upper-bar .nav-before {position: relative;}
+.upper-bar .nav-before::before{
+    content: "";
+    width: 1px;
+    height: 30px;
+    background-color: #4c6179;
+    position: absolute;
+    right: -6px;   
+    bottom: -10px;
+}
+.upper-bar .item {margin-right: 10px;font-size: 20px;color:#fefefe}
+                                    /* END UPPER BAR  */
+                                    /* START NAV BAR  */
+.nav-bar {background-color: #f9f9f9;}
+.nav-bar .navbar-brand img {height: 70px;}
+.nav-bar .navbar{margin-right: 0;}
+.nav-bar .navbar-nav .nav-item {color: #04030380;font-size: 17px;margin-right: 15px; }
+.navbar-light .navbar-nav .nav-before {position: relative;}
+.navbar-light .navbar-nav .nav-before::before{
+    content: "";
+    width: 1px;
+    height: 30px;
+    background-color: #eeeeee;
+    position: absolute;
+    right: -8px;   
+}
+.navbar-light .navbar-nav .active>.nav-link {color:#e62b32;position: relative;}
+.navbar-light .navbar-nav .active>.nav-link::after{
+    content: "";
+    background-color: #e62b32;
+    height:3px;
+    width: 100%;
+    position: absolute;
+    bottom:-28px;
+    right:0;
+}
+.nav-bar .left-side {margin-top: 33px;}
+.nav-bar  .left-one {font-size: 15px;text-decoration: none;color: #00000080;}
+.nav-bar  button {
+    background-color: #233142;
+    border-radius: 5px;
+    color:#ebedf1;
+    width:100px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+                                            /* END NAV BAR  */
+                                            /* START HEADER  */
+.header {background-image: url(../imgs/header.jpg);background-size: cover; }
+.header h2 {color:#b12b2f;margin: 150px auto 20px;font-weight: bold;}
+.header p {}
+.header button {}
+                                            /* END HEADER  */
+                                            /* START ABOUT  */
+
+.about {background-image: url(../imgs/about2.png);}
+.about p {margin: 106px auto; font-size: 20px;}
+.about p span {color:#b12b2f}
+                                    /* END ABOUT  */
+                                    /* START ARTICLES  */
+
+.articles .head h2 {color:#b12b2f;position: relative;margin: 20px 120px 0 0;font-weight: bold;}
+.articles .head h2::after {
+    content: "";
+    background-color:#b12b2f ;
+    width: 140px;;
+    height:2px;
+    position: absolute;
+    right:0;
+    bottom: -18px;;
+}
+.articles .card {margin:20px 0;}
+.articles .card .card-img-top {padding: 2px;}
+.articles .card .card-body {padding: 2px;}
+.articles .card .card-body h5 {color:#b12b2f;font-weight: bold;padding: 2px;}
+.articles .card .card-body .card-text {font-size: 16px;color: #525252;padding: 2px; margin:0 ;}
+.articles .card .card-body .details {
+    background-color: #233142;
+    font-size: 18px;
+    margin: 10px 25% 7px auto;
+    color: #bfc3c9;
+    outline: none;
+    width:150px;
+    padding:5px;
+    border:none
+}
+                                    /* END ARTICLES  */
+                                    /* START DONATIONS  */
+ .head2 h2 {color:#b12b2f;position: relative;margin: 20px 0 ;font-weight: bold;}
+ .head2 h2::after {
+    content: "";
+    background-color:#b12b2f ;
+    width: 165px;
+    height:2px;
+    position: absolute;
+    bottom: -21px;
+    left: 590px;
+
+}
+                                    /* END DONATIONS  */
+                                    /* START CALL US  */
+.call-us {background-image: url(../imgs/call.jpg);background-size: cover;background-repeat: no-repeat;}
+.call-us a {text-decoration: none;}
+.call-us a h2 {
+     margin-top: 50px; 
+     margin-bottom: 50px;
+     font-size: 30px ;
+      color:#b12b2f;
+      position: relative;
+      font-weight: bold;
+      outline: 0;
+      text-align: center;
+    }
+.call-us a :after {
+    content: "";
+    background-color:#b12b2f ;
+    width:98px;
+    height:1px;
+    position: absolute;
+    right: 268px;
+    bottom:-5px
+}
+.call-us p {font-weight: bold;font-size: 18px;color:#3a3b3e;text-align: center;}
+.call-us img {margin-bottom: 50px;height:90px}
+                                    /* END CALL US  */
+                                    /* START APP  */
+.app {background-image: url(../imgs/BG-phone.png);}
+.app .zero {margin-bottom: 30px 0;}
+.app .zero h2 {
+    margin-top: 75px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color:#4c4648
+}
+.app .zero p {
+    font-size: 22px;
+    line-height: 2.3;
+    color: #636061;
+}
+
+.app .one p {
+    margin-right: 120px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#4c4648
+}
+.app .one img {width:180px}
+.app .two {margin: 30px 0;}
+                                    /* END APP  */
+                                    /* START UPPER FOOTER  */
+    .upper-footer {background-color: #1a1f25;color:#d9dadb;}
+    .upper-footer .first-footer {margin-top:40px }
+    .upper-footer .first-footer img {height: 60px;}
+    .upper-footer .first-footer h2 {font-size: 20px; margin:20px 0;font-weight: bold;}
+    .upper-footer .first-footer p {color:#aeb2b4;line-height: 1.9;font-size: 15px;}
+    .upper-footer .second-footer {margin-top: 40px ;}
+    .upper-footer .second-footer li {line-height: 2.5;color:#b3b6ba;font-size: 15px;font-weight: bold;}
+    .upper-footer .second-footer .l1 {color: #cf1c21}
+    .upper-footer .second-footer a {text-decoration: none;}
+    .upper-footer .third-footer {margin-top: 40px;}
+    .upper-footer .third-footer h2 {color: #cf1c21;font-size: 15px;font-weight: bold;margin-bottom: 30px;}
+    .upper-footer .third-footer img {margin: 15px 0;height: 60px;}
+                                    /* END UPPER FOOTER  */
+                                    /* START FOOTER  */
+    .footer {background-color: #14171c;color:#d9dadb;padding: 10px;}
+    .footer i {font-size: 24px; letter-spacing: 20px;color: #eeeeee;}
+    .footer span {color:#cf1c21;font-size: 12px;}
+    .footer .down {font-size: 12px;}
+                                    /* END FOOTER  */
+                                    /* START MEDIA  */
+    @media (max-width: 768px) {
+    .articles .card .card-body .details {margin: 10px 35% 7px auto;}
+    .donations h2::after{left: 335px;}
+} 
+                                    /* END MEDIA  */
