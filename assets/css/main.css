@@ -67,9 +67,17 @@ img {max-width: 100%;}
                                             /* END NAV BAR  */
                                             /* START HEADER  */
 .header {background-image: url(../imgs/header.jpg);background-size: cover; }
-.header h2 {color:#b12b2f;margin: 150px auto 20px;font-weight: bold;}
-.header p {}
-.header button {}
+.header h2 {color:#b12b2f;margin: 120px auto 20px;font-weight: bold;font-size: 28px;}
+.header p {font-size: 20px;line-height: 2;}
+.header button {
+    background-color: #233142;
+    color: #ebedf1;
+    width: 165px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
                                             /* END HEADER  */
                                             /* START ABOUT  */
 
@@ -106,8 +114,9 @@ img {max-width: 100%;}
 }
                                     /* END ARTICLES  */
                                     /* START DONATIONS  */
- .head2 h2 {color:#b12b2f;position: relative;margin: 20px 0 ;font-weight: bold;}
- .head2 h2::after {
+.donations {background-color: #f5f5f5;}                                  
+ .donations .head2 h2 {color:#b12b2f;position: relative;margin: 20px 0 ;font-weight: bold;}
+ .donations .head2 h2::after {
     content: "";
     background-color:#b12b2f ;
     width: 165px;
@@ -115,13 +124,31 @@ img {max-width: 100%;}
     position: absolute;
     bottom: -21px;
     left: 590px;
+}
+.donations .first-case {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 100px 100px 0;
 
 }
+.donations .first-case .fc {border-radius: 50%; background-color: #f8f8f8;}
+.donations .first-case span  {display: block;}
+.donations button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #404040;
+    outline: none;
+    width: 90%;
+    padding: 20px;
+    border: none;
+}
+.donations .first-case .fc a:active {background-color: #233142 ;}
                                     /* END DONATIONS  */
                                     /* START CALL US  */
 .call-us {background-image: url(../imgs/call.jpg);background-size: cover;background-repeat: no-repeat;}
-.call-us a {text-decoration: none;}
-.call-us a h2 {
+.call-us .info-go  {text-decoration: none;}
+.call-us .info-go h2 {
      margin-top: 50px; 
      margin-bottom: 50px;
      font-size: 30px ;
@@ -131,7 +158,7 @@ img {max-width: 100%;}
       outline: 0;
       text-align: center;
     }
-.call-us a :after {
+.call-us .info-go :after {
     content: "";
     background-color:#b12b2f ;
     width:98px;
@@ -140,8 +167,17 @@ img {max-width: 100%;}
     right: 268px;
     bottom:-5px
 }
-.call-us p {font-weight: bold;font-size: 18px;color:#3a3b3e;text-align: center;}
-.call-us img {margin-bottom: 50px;height:90px}
+.call-us p {font-weight: bold;font-size: 18px;color:#3a3b3e;text-align: center;margin-bottom: 50px;}
+.call-us .info {margin-bottom: 53px; position: relative;margin-right: 120px;}
+.call-us .info a {text-decoration: none;}
+.call-us .info2 {
+    background-color: #3ab54a;
+    font-size: 22px;
+    color: #e9f6ea;
+    border-radius: 50px;
+    padding: 18px 40px 18px 0;
+}
+.call-us img {height:90px;position: absolute;top: -6px;left: 7px;}
                                     /* END CALL US  */
                                     /* START APP  */
 .app {background-image: url(../imgs/BG-phone.png);}
@@ -192,5 +228,13 @@ img {max-width: 100%;}
     @media (max-width: 768px) {
     .articles .card .card-body .details {margin: 10px 35% 7px auto;}
     .donations h2::after{left: 335px;}
+    .header {background-image: none;}
+    .about{background-image: none;}
+    .about p{margin:0}
+    .call-us {background-image: none;}
+    .call-us .info{margin-right: 45px;}
+    .call-us .info2 {font-size: 18px;}
+    .call-us img {top: -10px;left: 12px;}
+
 } 
                                     /* END MEDIA  */
