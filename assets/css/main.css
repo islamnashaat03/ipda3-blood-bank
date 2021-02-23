@@ -4,7 +4,7 @@ img {max-width: 100%;}
 
                                     /* END GLOBAL  */
                                     /* START UPPER BAR  */
-.upper-bar {background-color: #2d3e50;color :#bfc3c8;padding: 7px; font-weight: bold;}
+.upper-bar {background-color: #2d3e50;color :#bfc3c8; font-weight: bold;}
 .upper-bar a {text-decoration: none;}
 .upper-bar .arabic {color: #b12b2f;outline: none;}
 .upper-bar .english {color:#4c6179;position: relative;}
@@ -32,30 +32,12 @@ img {max-width: 100%;}
                                     /* START NAV BAR  */
 .nav-bar {background-color: #f9f9f9;}
 .nav-bar .navbar-brand img {height: 70px;}
-.nav-bar .navbar{margin-right: 0;}
 .nav-bar .navbar-nav .nav-item {color: #04030380;font-size: 17px;margin-right: 15px; }
-.navbar-light .navbar-nav .nav-before {position: relative;}
-.navbar-light .navbar-nav .nav-before::before{
-    content: "";
-    width: 1px;
-    height: 30px;
-    background-color: #eeeeee;
-    position: absolute;
-    right: -8px;   
-}
-.navbar-light .navbar-nav .active>.nav-link {color:#e62b32;position: relative;}
-.navbar-light .navbar-nav .active>.nav-link::after{
-    content: "";
-    background-color: #e62b32;
-    height:3px;
-    width: 100%;
-    position: absolute;
-    bottom:-28px;
-    right:0;
-}
-.nav-bar .left-side {margin-top: 33px;}
-.nav-bar  .left-one {font-size: 15px;text-decoration: none;color: #00000080;}
-.nav-bar  button {
+
+.navbar-light .navbar-nav.active> .nav-link {color:#e62b32;}
+.nav-bar  .left-1 {font-size: 15px;text-decoration: none;color: #00000080;}
+.nav-bar .left-2 {padding: 24px 0;}
+.nav-bar .left-2  button {
     background-color: #233142;
     border-radius: 5px;
     color:#ebedf1;
@@ -77,7 +59,12 @@ img {max-width: 100%;}
     border: none;
     outline: none;
     margin-bottom: 20px;
+} 
+.header .owl-theme .owl-dots .owl-dot {width: 20px;}
+.header .owl-theme .owl-dots .owl-dot span {
+    background-color: #fff;
 }
+.header .owl-theme .owl-dots .owl-dot.active span {background-color: red;}
                                             /* END HEADER  */
                                             /* START ABOUT  */
 
@@ -86,7 +73,7 @@ img {max-width: 100%;}
 .about p span {color:#b12b2f}
                                     /* END ABOUT  */
                                     /* START ARTICLES  */
-
+.articles {position: relative;margin: 30px;}
 .articles .head h2 {color:#b12b2f;position: relative;margin: 20px 120px 0 0;font-weight: bold;}
 .articles .head h2::after {
     content: "";
@@ -97,7 +84,18 @@ img {max-width: 100%;}
     right:0;
     bottom: -18px;;
 }
-.articles .card {margin:20px 0;}
+.articles .owl-articles .owl-nav {
+    position: absolute;
+    top: -95px;
+    left: 1px;
+    font-size: 70px;
+    color: #b0b0b0;
+    outline: none;
+    font-weight: normal;
+}
+.articles .owl-articles .owl-nav button {outline: none;}
+.articles .owl-articles .owl-nav span {margin-right: 15px;}
+.articles .card {position: relative;}
 .articles .card .card-img-top {padding: 2px;}
 .articles .card .card-body {padding: 2px;}
 .articles .card .card-body h5 {color:#b12b2f;font-weight: bold;padding: 2px;}
@@ -112,11 +110,25 @@ img {max-width: 100%;}
     padding:5px;
     border:none
 }
+.articles .card i {
+    background-color: #2c3d4f;
+    color: #989ca6;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top:5px;
+    left:5px;
+    font-size:24px
+}
                                     /* END ARTICLES  */
                                     /* START DONATIONS  */
-.donations {background-color: #f5f5f5;}                                  
- .donations .head2 h2 {color:#b12b2f;position: relative;margin: 20px 0 ;font-weight: bold;}
- .donations .head2 h2::after {
+.donations {background-color: #f5f5f5;}      
+.head2 h2 {
+    color: #b12b2f;
+    font-weight: bold
+}                            
+/* .head2 h2::after {
     content: "";
     background-color:#b12b2f ;
     width: 165px;
@@ -124,14 +136,14 @@ img {max-width: 100%;}
     position: absolute;
     bottom: -21px;
     left: 590px;
-}
+} */
 .donations .first-case {
     background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 0 100px 100px 0;
-
 }
+.donations .first-case .blood-type {background-color: #f8f8f8; border-radius: 50%; }
 .donations .first-case .fc {border-radius: 50%; background-color: #f8f8f8;}
 .donations .first-case span  {display: block;}
 .donations button {
@@ -143,7 +155,7 @@ img {max-width: 100%;}
     padding: 20px;
     border: none;
 }
-.donations .first-case .fc a:active {background-color: #233142 ;}
+/* .donations .first-case .fc a.active {background-color: #233142 ;} */
                                     /* END DONATIONS  */
                                     /* START CALL US  */
 .call-us {background-image: url(../imgs/call.jpg);background-size: cover;background-repeat: no-repeat;}
@@ -224,10 +236,119 @@ img {max-width: 100%;}
     .footer span {color:#cf1c21;font-size: 12px;}
     .footer .down {font-size: 12px;}
                                     /* END FOOTER  */
+                                    /* START REGISTER PAGE  */
+    .upper-bar .reg-left a {
+    color: #d2d4d8;
+    font-size: 13px;
+    padding: 0;
+    text-decoration: underline;
+    }
+    .upper-bar .reg-left-2 a {color: #d69d34;font-size: 15px;}
+   .register {background-color: #fbfbfb;border-top: 2px solid #efefef;}
+   .register a {text-decoration: none;}
+   .register .register-head {
+    background-color: #fff;
+    border: 2px solid #efefef;
+    padding: 20px;
+    margin: 30px 60px;
+   }
+   .register .register-head a {color: #cfcfcf;}
+   .register .register-head span {color:#9a9ca1;}
+   .register-1 {
+       background-color: #fff;
+       border: 2px solid #efefef;
+       padding: 20px;
+       margin: 30px 60px;
+    }
+    .register .form-control {
+        border-radius: 0;
+        background-color: #fbfbfb;
+        font-weight: bold;
+        border: 1px solid #efefef;
+        padding: 20px;
+        color:#616161;
+        width:85%;
+        margin:40px auto;
+        padding:30px;
+        font-size: 18px;
+        
+    }
+    input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
+    .form-check {padding: 0;}
+    .form-check-input {top:7px}
+    .register .forgot-pass { margin:0 0 30px;}
+    .register .forgot-pass a {color: #3c3c3c;font-size: 20px; font-weight: bold;}
+    .register .remeber-me {margin: 0 0 30px;}
+    .register .form-check-label {font-size: 20px; margin-right: 10px;font-weight: bold;}
+    .register .login button,
+    .register .new-acc button {
+        width: 100%;
+         background-color: #3ab54a;
+          color: #e2ebe4;
+          font-size: 25px;
+          padding: 10px;
+          margin: 40px 0;
+          border: #dfe1e0;
+          
+
+        }
+    .register .new-acc button {
+         background-color: #2d3e50;
+         color: #ccd1d5;
+        
+        }
+    .register .forgot-pass img {height: 20px;}
+    
+                                 /* END REGISTER PAGE  */
+                                 /* START NEW ACCOUNT PAGE  */
+    .new-account {background-color: #fbfbfb;border-top: 2px solid #efefef;}
+    .new-account .new-account-head {
+        background-color: #fff;
+        padding: 20px;
+        margin: 30px 60px;
+    }
+    .new-account a {text-decoration: none;}
+    .new-account .new-account-head a {color: #cfcfcf;}
+   .new-account .new-account-head span {color:#9a9ca1;}
+   .new-acc-2 {
+       background-color: #fff;
+       border: 2px solid #efefef;
+       padding: 20px;
+       margin: 30px 60px;
+    }
+    .new-acc-2 .form-control {
+        border-radius: 0;
+        background-color: #fbfbfb;
+        font-weight: bold;
+        border: 1px solid #efefef;
+        padding: 20px;
+        color:#616161;
+        width:85%;
+        margin:40px auto;
+        padding:30px;
+        font-size: 18px;
+    }
+    .new-account-head-2 .form-group {text-align: center;}
+    .new-account-head-2 button {
+        background-color: #3ab54a;
+        color: #e2ebe4;
+        font-size: 25px;
+        padding: 10px;
+        border: #dfe1e0;
+        width: 50%
+    }
+    .font-user {position: relative;}
+    .font-user i {
+        position: absolute;
+        left: 100px;
+        top:18px;
+        font-size: 24px;
+    }
+
+                                 /* END NEW ACCOUNT PAGE  */
                                     /* START MEDIA  */
     @media (max-width: 768px) {
-    .articles .card .card-body .details {margin: 10px 35% 7px auto;}
-    .donations h2::after{left: 335px;}
+    /* .donations h2::after{left: 335px;} */
     .header {background-image: none;}
     .about{background-image: none;}
     .about p{margin:0}
@@ -237,4 +358,23 @@ img {max-width: 100%;}
     .call-us img {top: -10px;left: 12px;}
 
 } 
+@media (min-width: 992px) {
+    .nav-bar .left-1 {margin-right: 60px;}
+    .navbar .nav-link {padding: 27px;}
+    .navbar {padding-bottom: 0;}
+    .navbar-light .navbar-nav .active>.nav-link {
+        color:#e62b32;
+        border-bottom: 2px solid #e62b32;
+    }
+    
+    .navbar-light .navbar-nav .nav-before {position: relative;}
+    .navbar-light .navbar-nav .nav-before::before{
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: #eeeeee;
+        position: absolute;
+        right: -8px;   
+    }
+}
                                     /* END MEDIA  */
