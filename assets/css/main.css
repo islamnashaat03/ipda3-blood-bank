@@ -1,6 +1,15 @@
                                     /* START GLOBAL  */
-body {font-family: 'Cairo', sans-serif;height:6000px; }
+body {font-family: 'Cairo', sans-serif; }
 img {max-width: 100%;}
+.new-account-head {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px 60px;
+}
+.new-account-head a {color: #cfcfcf; text-decoration: none;}
+.new-account-head span {color:#9a9ca1;}
+
+
 
                                     /* END GLOBAL  */
                                     /* START UPPER BAR  */
@@ -37,6 +46,7 @@ img {max-width: 100%;}
 .navbar-light .navbar-nav.active> .nav-link {color:#e62b32;}
 .nav-bar  .left-1 {font-size: 15px;text-decoration: none;color: #00000080;}
 .nav-bar .left-2 {padding: 24px 0;}
+.nav-bar .left-2 a:hover {text-decoration:none ;}
 .nav-bar .left-2  button {
     background-color: #233142;
     border-radius: 5px;
@@ -73,17 +83,9 @@ img {max-width: 100%;}
 .about p span {color:#b12b2f}
                                     /* END ABOUT  */
                                     /* START ARTICLES  */
-.articles {position: relative;margin: 30px;}
-.articles .head h2 {color:#b12b2f;position: relative;margin: 20px 120px 0 0;font-weight: bold;}
-.articles .head h2::after {
-    content: "";
-    background-color:#b12b2f ;
-    width: 140px;;
-    height:2px;
-    position: absolute;
-    right:0;
-    bottom: -18px;;
-}
+.articles {margin: 30px;}
+.articles .head h3 {color:#b12b2f;margin: 20px 120px 0 0;font-weight: bold;}
+.articles .head h3 span {border-bottom: 2px solid #b12b2f; padding: 5px;}
 .articles .owl-articles .owl-nav {
     position: absolute;
     top: -95px;
@@ -123,20 +125,14 @@ img {max-width: 100%;}
 }
                                     /* END ARTICLES  */
                                     /* START DONATIONS  */
-.donations {background-color: #f5f5f5;}      
-.head2 h2 {
-    color: #b12b2f;
-    font-weight: bold
-}                            
-/* .head2 h2::after {
-    content: "";
-    background-color:#b12b2f ;
-    width: 165px;
-    height:2px;
-    position: absolute;
-    bottom: -21px;
-    left: 590px;
-} */
+.head2 h3 {color: #b12b2f;font-weight: bold;}  
+.head2 h3 span {border-bottom: 2px solid #b12b2f;padding: 5px;width: 57%;}
+.donations {background-color: #f5f5f5;}        
+.donations select {width: 80%;}   
+.donations select::-ms-expand {
+    display: none;
+}   
+.donations p {color: #3b4b5e; font-weight: bold; font-size: 18px;}
 .donations .first-case {
     background-color: #fff;
     padding: 20px;
@@ -144,18 +140,36 @@ img {max-width: 100%;}
     border-radius: 0 100px 100px 0;
 }
 .donations .first-case .blood-type {background-color: #f8f8f8; border-radius: 50%; }
-.donations .first-case .fc {border-radius: 50%; background-color: #f8f8f8;}
-.donations .first-case span  {display: block;}
-.donations button {
+.donations .bt-2 {
+    background-color: #233142 ;
     font-size: 18px;
     font-weight: bold;
-    color: #404040;
+    color: #e5e6e6;
+    outline: none;
+    width: 17%;
+    padding: 10px;
+    border: none;
+    margin: 20px 0;
+}
+.donations .bt-1 {
+    background-color: #f6f6f6 ;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444444;
     outline: none;
     width: 90%;
     padding: 20px;
     border: none;
 }
-/* .donations .first-case .fc a.active {background-color: #233142 ;} */
+.donations .bt-1.active {background-color: #233142 ; color: #f6f8f7;}
+.donations a.active {background-color: #233142 ;}
+.donations a i {
+    padding: 10px;
+    background-color: #fff;
+     color: #363636;
+     font-size: 24px;
+     border-radius: 50%;
+    }
                                     /* END DONATIONS  */
                                     /* START CALL US  */
 .call-us {background-image: url(../imgs/call.jpg);background-size: cover;background-repeat: no-repeat;}
@@ -302,14 +316,14 @@ img {max-width: 100%;}
                                  /* END REGISTER PAGE  */
                                  /* START NEW ACCOUNT PAGE  */
     .new-account {background-color: #fbfbfb;border-top: 2px solid #efefef;}
-    .new-account .new-account-head {
+    /* .new-account .new-account-head {
         background-color: #fff;
         padding: 20px;
         margin: 30px 60px;
-    }
+    } */
     .new-account a {text-decoration: none;}
-    .new-account .new-account-head a {color: #cfcfcf;}
-   .new-account .new-account-head span {color:#9a9ca1;}
+    /* .new-account .new-account-head a {color: #cfcfcf;}
+   .new-account .new-account-head span {color:#9a9ca1;} */
    .new-acc-2 {
        background-color: #fff;
        border: 2px solid #efefef;
@@ -346,9 +360,147 @@ img {max-width: 100%;}
     }
 
                                  /* END NEW ACCOUNT PAGE  */
+                                 /* START ARTICLES DETAILS PAGE  */
+    .articles-details {
+        background-color: #fbfbfb;
+        border-top: 2px solid #efefef ;
+        border-bottom: 2px solid #efefef;
+        padding:0 0 20px 0;
+        }
+    /* .articles-details .new-account-head {
+        background-color: #fff;
+        padding: 20px;
+        margin: 30px 60px;
+    } */
+    /* .articles-details .new-account-head a {color: #cfcfcf; text-decoration: none;}
+    .articles-details .new-account-head span {color:#9a9ca1;} */
+    .articles-details img {width:60%}
+    .articles-details .article-head {position: relative; background-color: #2d3e50;padding: 10px;}
+    .articles-details .article-head h4 {color: #dfe2e4;}
+    .articles-details .article-head i {
+        background-color: #eceff1;
+        color: #989ca6;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        position: absolute;
+        top:10px;
+        left:10px;
+        font-size:24px
+    }
+    .articles-details .paragraphs {
+        background-color: #fff;
+        border: 1px solid #f2f2f2;
+        margin: 30px 0;
+        padding: 20px;
+
+        }
+    .articles-details .paragraphs p {color: #2d4650; line-height: 2;font-weight: bold;}
+    .articles-details .head h3 {color:#b12b2f;font-weight: bold;}
+    .articles-details .head h3 span {border-bottom: 2px solid #b12b2f; padding: 5px;}
+    .articles-details .owl-articles .owl-nav {
+        position: absolute;
+        top: -95px;
+        left: 1px;
+        font-size: 70px;
+        color: #b0b0b0;
+        outline: none;
+        font-weight: normal;
+    }
+    .articles-details .owl-articles .owl-nav button {outline: none;}
+    .articles-details .owl-articles .owl-nav span {margin-right: 15px;}
+    .articles-details .card .card-img-top {padding: 2px;}
+    .articles-details .card .card-body {padding: 2px;}
+    .articles-details .card .card-body h5 {color:#b12b2f;font-weight: bold;padding: 2px;}
+    .articles-details .card .card-body .card-text {
+        font-size: 16px;
+        color: #525252;
+        padding: 2px 2px 15px;
+         margin:0 ;
+        }
+.articles-details .card i {
+        background-color: #2c3d4f;
+        color: #989ca6;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        position: absolute;
+        top:5px;
+        left:5px;
+        font-size:24px
+}
+                                 /* END ARTICLES DETAILS PAGE  */
+                                 /* START CONTACT US PAGE  */
+.contact-us .new-account-head {padding: 12px;margin: 30px 0px;}
+.contact-us {
+        background-color: #fbfbfb;
+        border-top: 1px solid #efefef ;
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 20px;
+}
+.contact-us .right-side { border: 1px solid #f1f1f1;background-color: #fff;}
+.contact-us .right-side h4 {
+    background-color: #2d3e50;
+    padding: 10px 0;
+    color: #fbfbf6;
+    text-align: center;
+}
+.contact-us .right-side img {height: 130px;margin: 30px;}
+.contact-us .right-side .three {color: #777777;padding: 20px;line-height: 2;}
+.contact-us .right-side a {
+    color: #e43740;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 19px;
+}
+.contact-us .right-side .fa-facebook-official {color: #3a549f;padding: 5px;}
+.contact-us .right-side .fa-twitter {color:white ;background-color:#50abf1;padding: 5px;}
+.contact-us .right-side .fa-youtube-square {color:#dd472f ; padding: 5px; }
+.contact-us .right-side .fa-instagram  {background-color: #c535a4;color: white;padding: 5px; }
+.contact-us .right-side .fa-whatsapp  {background-color: #1bd742;color: white;padding: 5px; }
+.contact-us .right-side .fa-google-plus-official  {background-color: #de4b39;color: white;padding: 5px; }
+.contact-us .right-side .fa-3x {margin-bottom: 15px; font-size: 40px;}
+.contact-us .left-side {border: 1px solid #f1f1f1; background-color: #fff;}
+
+.contact-us .left-side h4 {
+    background-color: #2d3e50;
+    padding: 10px 0;
+    color: #fbfbf6;
+    text-align: center;
+}
+.contact-us .left-side button {
+    background-color: #2d3e50;
+    width: 100%;
+    color: #fbfbf6;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 18px
+}
+.contact-us .left-side .form-control {border-radius: 0;padding: 25px;}
+                                 /* END CONTACT US PAGE  */
+                                 /* START WHO ARE WE PAGE  */
+.who-are-we {
+    background-color: #fbfbfb;
+    border-top: 2px solid #efefef;
+    border-bottom: 2px solid #efefef;
+    padding: 0 0 20px 0;
+}
+.who-are-we .new-account-head {margin: 30px 0 ;}
+.who-are-we .who-are-we-details {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    margin: 30px 0;
+    padding: 20px;
+}
+.who-are-we .who-are-we-details img  {height: 120px; margin: 30px;}
+.who-are-we .who-are-we-details p {padding: 10px;font-size: 18px;font-weight: bold;color: #555555;}
+
+
+                                 /* END WHO ARE WE PAGE  */
                                     /* START MEDIA  */
     @media (max-width: 768px) {
-    /* .donations h2::after{left: 335px;} */
     .header {background-image: none;}
     .about{background-image: none;}
     .about p{margin:0}
@@ -356,6 +508,8 @@ img {max-width: 100%;}
     .call-us .info{margin-right: 45px;}
     .call-us .info2 {font-size: 18px;}
     .call-us img {top: -10px;left: 12px;}
+    .navbar-light .navbar-nav .active>.nav-link {
+        color:#e62b32;}
 
 } 
 @media (min-width: 992px) {
