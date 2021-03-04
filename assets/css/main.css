@@ -661,7 +661,9 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     .contact-us .right-side img,
     .who-are-we .who-are-we-details img,
     .register-1 img  {height: 75px;}
-
+    .islam .list-group {flex-direction: column;text-align: center;}
+    .islam .islam-1 {width:100%}
+    .islam .islam-3{width: 100%;}
     
 }
                                 /* TABLET SCREEN MEDIA */
