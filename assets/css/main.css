@@ -413,7 +413,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     background-color: #fff;
     border: 2px solid #efefef;
     padding: 20px;
-    margin: 30px 60px;
+    margin: 30px 0;
 }
 .new-acc-2 .form-control {
     border-radius: 0;
@@ -422,7 +422,6 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     border: 1px solid #efefef;
     padding: 20px;
     color:#616161;
-    width:85%;
     margin:40px auto;
     padding:30px;
     font-size: 18px;
@@ -437,14 +436,12 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     width: 50%
 }
 .font-user {position: relative;}
-.font-user ::after{
-    content: "\f078";
-    width: 15px;
-    height: 15px;
+.font-user::after{
+    content:"\f0dd";
     position: absolute;
     top:0;
     left:0;
-    background-color: white;
+    line-height: 62px;
 
 }
 /* .font-user i {
