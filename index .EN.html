@@ -17,11 +17,11 @@
     <title>Blood Bank </title>
   </head>
   <body>
-                                      <!-- START UPPER BAR  -->
+                                       <!-- START UPPER BAR  -->
     <section class="upper-bar py-2 ">
       <div class="container">
         <div class="row">
-          <div class=" col-sm-4 text-center text-sm-left ">
+          <div class="col-sm-4 text-center text-sm-left ">
             <a href="index .EN.html" class="english"> EN </a>
             <a href="index.html" class="arabic"> عربي </a>
           </div>
@@ -54,22 +54,28 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index .EN.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index .EN.html" target="_blank" >Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-before" href="#">About Us</a>
+                    <a class="nav-link nav-before" href="#" target="_blank">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-before" href="articles.EN.html">Articles</a>
+                    <a class="nav-link nav-before" href="#" target="_blank">Articles</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-before" href="donations application .EN.html">Donation Requests</a>
+                    <a class="nav-link nav-before" href="donations application .EN.html" target="_blank">
+                      Donation Requests
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-before" href="who are we.EN.html">Who Are We </a>
+                    <a class="nav-link nav-before" href="who are we.EN.html" target="_blank">
+                      Who Are We
+                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-before" href="contact us .EN.html">Call Us  </a>
+                    <a class="nav-link nav-before" href="contact us .EN.html" target="_blank">
+                      Contact Us
+                    </a>
                   </li>
                 </ul>
                 <a class="nav-link left-1" href="new-acc.EN.html" target="_blank">Create New Account</a>
@@ -78,8 +84,8 @@
             </nav>
           </div>
     </section>
-                                    <!-- END NAV BAR  -->
-                                    <!-- START HEADER  -->
+                                        <!-- END NAV BAR  -->
+                                        <!-- START HEADER  -->
     <section class="header">
       <div class="container">
         <div class="owl-carousel owl-theme owl-header">
@@ -107,8 +113,8 @@
         </div>
     </section>
 
-                                    <!-- END HEADER  -->
-                                    <!-- START ABOUT  -->
+                                        <!-- END HEADER  -->
+                                        <!-- START ABOUT  -->
     <section class="about">
       <div class="container">
         <div class="row">
@@ -118,8 +124,8 @@
         </div>
       </div>
     </section>
-                                      <!-- END ABOUT  -->
-                                      <!-- START ARTCILES  -->
+                                        <!-- END ABOUT  -->
+                                        <!-- START ARTCILES  -->
     <section class="articles">
       <div class="container">
         <div class="head text-center text-md-left"><h3><span>Articles</span></h3></div>
@@ -180,41 +186,46 @@
     <section class="donations">
     <div class="container">
       <form action="">
-        <div class="row py-4 ">
+        <div class="my-4">
+          <div class="row filter">
             <div class="col-sm-4 offset-1">
               <div class="custom-select-1">
                 <select>
-                  <option value="" selected disabled data-default>Choose Blood Type </option>
-                  <option value="1">+A</option>
-                  <option value="2">-A</option>
-                  <option value="3">+B</option>
-                  <option value="4">-B</option>
-                  <option value="5">-O</option>
-                  <option value="6">+O</option> 
-                  <option value="7">+AB</option>
-                  <option value="8">-AB</option>
+                  <option value="" selected disabled data-default>Choose Blood Type</option>
+                  <option value="1">A+</option>
+                  <option value="2">A-</option>
+                  <option value="3">B+</option>
+                  <option value="4">B-</option>
+                  <option value="5">O-</option>
+                  <option value="6">O+</option> 
+                  <option value="7">AB+</option>
+                  <option value="8">AB-</option>
                 </select>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
               </div>
             </div>
             <div class="col-sm-4">
-              <div >
+              <div class="custom-select-1">
                 <select>
                   <option value="" selected disabled data-default>Choose City </option>
                   <option value="1">Cairo</option>
-                  <option value="2">AL Dakhlia  </option>
-                  <option value="3">Al Monofia  </option>
-                  <option value="4">AL Gharbiya</option>
-                  <option value="5">AL Elsmaaliya  </option>
-                  <option value="6">EL Swes</option>
-                  <option value="7">El Giza </option>
+                  <option value="2">Al-Dakhliya </option>
+                  <option value="3">Al-Monofiya</option>
+                  <option value="4">Al-Gharbiya</option>
+                  <option value="5">Al-Asmaaliya</option>
+                  <option value="6">El-Swes</option>
+                  <option value="7">Giza</option>
                   <option value="8">Helwan</option>
                 </select>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
               </div>
+              
             </div>
             <div class="col-sm-3">
               <a><button class="bt-0" type="submit"><i class="fa fa-search"></i></button></a>
             </div>
           </div>
+        </div>
         </form>
       <div class="first-case">
         <div class="row">
@@ -227,7 +238,9 @@
             </div>
              </div>
           <div class="col-sm-3 offset-1">
-            <a href="donations application .EN.html"><button class="bt-1">Details</button></a>
+            <a href="donations application .EN.html" target="_blank">
+              <button class="bt-1">Details</button>
+            </a>
           </div>
         </div>
       </div>
@@ -242,7 +255,9 @@
             </div>
           </div>
           <div class="col-sm-3 offset-1">
-            <a href="donations application .EN.html"><button class="bt-1 active">Details</button></a>
+            <a href="donations application .EN.html" target="_blank">
+              <button class="bt-1 active">Details</button>
+            </a>
           </div>
         </div>
       </div>
@@ -257,7 +272,9 @@
             </div>
           </div>
           <div class="col-sm-3 offset-1">
-            <a href="donations application .EN.html"><button class="bt-1">Details</button></a>
+            <a href="donations application .EN.html" target="_blank">
+              <button class="bt-1">Details</button>
+            </a>
           </div>
         </div>
       </div>
@@ -272,7 +289,9 @@
             </div>
           </div>
           <div class="col-sm-3 offset-1">
-            <a href="donations application .EN.html"><button class="bt-1">Details</button></a>
+            <a href="donations application .EN.html" target="_blank">
+              <button class="bt-1">Details</button>
+            </a>
           </div>
         </div>
       </div>
@@ -291,7 +310,7 @@
             <div class="row">
               <div class="col-lg-6 ">
                 <div class="info">
-                  <a class="info-go-2" href=""><img  src="assets/imgs/whats.png" alt="">
+                  <a class="info-go-2" href="https://wa.me/201065740616" target="_blank"><img  src="assets/imgs/whats.png" alt="">
                   <div class="info2">+ 002 125487921 </div></a>
                 </div>
                 
