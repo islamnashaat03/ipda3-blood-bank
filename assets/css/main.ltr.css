@@ -53,6 +53,17 @@ a .fa-whatsapp:hover{color: #1bd742;}
     bottom: -10px;
 }
 .upper-bar .item {margin-left:10px;font-size: 20px;color:#fefefe}
+.upper-bar span {font-size: 16px;color: #bc8d39;}
+.upper-bar .dropdown {display: inline-block;}
+.upper-bar .dropdown .dropdown-toggle {
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    color: #fff;
+}
+.upper-bar .dropdown .dropdown-item{color: #444;}
+.upper-bar .dropdown .dropdown-item:hover{background-color: #233142;color:#fff}
                                     /* END UPPER BAR  */
                                     /* START NAV BAR  */
 .nav-bar {background-color: #f9f9f9; padding-top: 10px;}
