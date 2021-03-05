@@ -26,7 +26,7 @@ a .fa-whatsapp:hover{color: #1bd742;}
     height: 100%;
     width: 100%;
 }
-
+.nav-bar img {height: 50px;}
 
                                     /* END GLOBAL  */
                                     /* START UPPER BAR  */
@@ -72,23 +72,20 @@ a .fa-whatsapp:hover{color: #1bd742;}
 }
 .nav-bar .left-1 {font-size: 15px;text-decoration: underline;color: #5b626e;}
 .nav-bar .left-2 {
-     background-color: #233142;
-     border-radius: 5px;
+    background-color: #233142;
+    border-radius: 5px;
     color:#ebedf1;
     width:200px;
     padding: 3px;
-    margin-right: 25px;
 }
 .nav-bar .left-2 img {height: 40px;}
-.nav-bar .left-2 a:hover {text-decoration:none ;}
-.nav-bar .left-2  button {
-    background-color: #233142;
+.nav-bar .left-2 span {
     border-radius: 5px;
-    color:#c8cbd0;
-    width:100px;
+    color:#e9ecee;
     border: none;
     outline: none;
     margin-right: 20px;
+    padding-right: 20px;
 }
                                             /* END NAV BAR  */
                                             /* START HEADER  */
@@ -178,30 +175,19 @@ a .fa-whatsapp:hover{color: #1bd742;}
     padding: 15px;
     border-radius: 105px;
     width: 100%;
-    
-     /*  */
 }
 .donations .custom-select-1 {position: relative;display: flex;}
 .donations .custom-select-1 i {border-right: 1px solid #eaeaea;}
-.donations .custom-select-1 i {
+.donations .custom-select-1::after {
+    content: "\f0dd";
     position: absolute;
-    right: auto;
-    left: 18px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-right: 12px;
-
-}
-/* .select-selected:after {
-    content: "\f078";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: black;
     top: 0;
-    left: 0;
-} */
+    left: 20px;
+    width: 15px;
+    height: 100%;
+    line-height:55px;
+    
+}
 .donations select option[data-default] {color: #888;}   
 .donations select option {padding: 5px; color:black}
 .donations  .bt-0 {
@@ -335,23 +321,18 @@ a .fa-whatsapp:hover{color: #1bd742;}
 .footer .down {font-size: 12px;}
                                     /* END FOOTER  */
                                     /* START REGISTER PAGE  */
-.upper-bar .reg-left a {
+.upper-bar .reg-left  {
     color: #d2d4d8;
     font-size: 13px;
-    padding: 0;
+    padding: 0  0 0 30px;
     text-decoration: underline;
+    display: inline-block;
+    margin-left: 15px;
 }
-.upper-bar .reg-left-2 a {color: #d69d34;font-size: 15px;}
+.upper-bar .reg-left-2  {color: #d69d34;font-size: 15px;display: inline-block;}
 .register {background-color: #fbfbfb;border-top: 2px solid #efefef;}
 .register a {text-decoration: none;}
-.register .register-head {
-    background-color: #fff;
-    border: 2px solid #efefef;
-    padding: 20px;
-    margin: 30px 60px;
-}
-.register .register-head a {color: #cfcfcf;}
-.register .register-head span {color:#9a9ca1;}
+.register 
 .register-1 {
     background-color: #fff;
     border: 2px solid #efefef;
@@ -415,6 +396,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     padding: 20px;
     margin: 30px 0;
 }
+
 .new-acc-2 .form-control {
     border-radius: 0;
     background-color: #fbfbfb;
@@ -425,6 +407,19 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     margin:40px auto;
     padding:30px;
     font-size: 18px;
+    height: 100px;
+}
+.new-acc-2 .custom-select {
+    border-radius: 0;
+    background-color: #fbfbfb;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    padding: 20px;
+    color:#616161;
+    margin:40px auto;
+    padding:30px;
+    font-size: 18px;
+    height: 100%;
 }
 .new-account-head-2 .form-group {text-align: center;}
 .new-account-head-2 button {
@@ -444,12 +439,6 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     line-height: 62px;
 
 }
-/* .font-user i {
-    position: absolute;
-    left: 100px;
-    top:18px;
-    font-size: 24px;
-} */
                                  /* END NEW ACCOUNT PAGE  */
                                  /* START ARTICLES DETAILS PAGE  */
 .articles-details {
@@ -521,7 +510,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     border-bottom: 1px solid #efefef;
     padding-bottom: 20px;
 }
-.contact-us .right-side { border: 1px solid #f1f1f1;background-color: #fff;padding: 5px;}
+.contact-us .right-side { border: 1px solid #f1f1f1;background-color: #fff;padding-bottom: 5px;}
 .contact-us .right-side h4 {
     background-color: #2d3e50;
     padding: 10px 0;
@@ -673,9 +662,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     .contact-us .right-side img,
     .who-are-we .who-are-we-details img,
     .register-1 img  {height: 75px;}
-    .islam .list-group {flex-direction: column;text-align: center;}
-    .islam .islam-1 {width:100%}
-    .islam .islam-3{width: 100%;}
+    
     
 }
                                 /* TABLET SCREEN MEDIA */
@@ -683,8 +670,6 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     .navbar-light .navbar-nav .active>.nav-link {color:#e62b32;}
     .donations .first-case .blood-type {border-radius: 0;width: 100%;height: 100%;}
     .donations .first-case .blood-type h2  {line-height: 100px;font-size: 30px;}
-    
-
         }
 
                                     /* MEDUIM SCREEN MEDIA */
@@ -696,6 +681,9 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
      .donations .first-case {
         border-radius: 0;
         border: 1px solid #d0cfcf;}
+        .islam .list-group {flex-direction: column;text-align: center;}
+        .islam .islam-1 {width:100%}
+        .islam .islam-3{width: 100%;}
 }
 @media (min-width:992px) {  
     .nav-bar .navbar-nav .nav-item{font-size: 14px; margin-right: 11px;}
@@ -723,6 +711,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
 @media (min-width:1200px) {
     .nav-bar .navbar-nav .nav-item {font-size: 20px;margin-right: 15px;}
     .nav-bar .left-1 {margin-right: 27px;}
+    .nav-bar .left-2 {margin-right: 60px;}
 }
 
                                     /* END MEDIA  */

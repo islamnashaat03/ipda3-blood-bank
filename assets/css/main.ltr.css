@@ -80,18 +80,15 @@ a .fa-whatsapp:hover{color: #1bd742;}
     color:#ebedf1;
     width:200px;
     padding: 3px;
-    margin-left: 25px;
 }
+.nav-bar .left-2 a:hover{text-decoration: none;}
 .nav-bar .left-2 img {height: 40px;}
-.nav-bar .left-2 a:hover {text-decoration:none ;}
-.nav-bar .left-2  button {
-    background-color: #233142;
+.nav-bar .left-2 span {
     border-radius: 5px;
-    color:#c8cbd0;
-    width:100px;
+    color:#e9ecee;
     border: none;
     outline: none;
-    margin-left: 20px;
+    padding-left: 10px;
 }
                                             /* END NAV BAR  */
                                             /* START HEADER  */
@@ -339,13 +336,14 @@ a .fa-whatsapp:hover{color: #1bd742;}
 .footer .down {font-size: 12px;}
                                     /* END FOOTER  */
                                     /* START REGISTER PAGE  */
-.upper-bar .reg-left a {
+.upper-bar .reg-left  {
     color: #d2d4d8;
     font-size: 13px;
     padding: 0;
     text-decoration: underline;
+    margin-right: 15px;
 }
-.upper-bar .reg-left-2 a {color: #d69d34;font-size: 15px;}
+.upper-bar .reg-left-2  {color: #d69d34;font-size: 15px;}
 .register {background-color: #fbfbfb;border-top: 2px solid #efefef;}
 .register a {text-decoration: none;}
 .register .register-head {
@@ -518,7 +516,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     border-bottom: 1px solid #efefef;
     padding-bottom: 20px;
 }
-.contact-us .right-side { border: 1px solid #f1f1f1;background-color: #fff;padding: 5px;}
+.contact-us .right-side { border: 1px solid #f1f1f1;background-color: #fff;padding-bottom: 5px;}
 .contact-us .right-side h4 {
     background-color: #2d3e50;
     padding: 10px 0;
@@ -670,10 +668,11 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     .contact-us .right-side img,
     .who-are-we .who-are-we-details img,
     .register-1 img  {height: 75px;}
+    
 
     
 }
-                                /* TABLET SCREEN MEDIA */
+                                    /* TABLET SCREEN MEDIA */
 @media (min-width: 576px) {
     .navbar-light .navbar-nav .active>.nav-link {color:#e62b32;}
     .donations .first-case .blood-type {border-radius: 0;width: 100%;height: 100%;}
@@ -684,13 +683,16 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
 
                                     /* MEDUIM SCREEN MEDIA */
 @media (min-width:786px) {
-
+    
 }
                                     /* LARGE SCREEN MEDIA */
 @media (max-width:992px) {
      .donations .first-case {
         border-radius: 0;
         border: 1px solid #d0cfcf;}
+    .islam .list-group {flex-direction: column;text-align: center;}
+    .islam .islam-1 {width:100%}
+    .islam .islam-3{width: 100%;}
 }
 @media (min-width:992px) {  
     .nav-bar .navbar-nav .nav-item{font-size: 14px; margin-left: 11px;}
@@ -718,6 +720,7 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
 @media (min-width:1200px) {
     .nav-bar .navbar-nav .nav-item {font-size: 15px;margin-left: 15px;}
     .nav-bar .left-1 {margin-left: 27px;}
+    .nav-bar .left-2 {margin-left: 60px;}
 }
 
                                     /* END MEDIA  */
