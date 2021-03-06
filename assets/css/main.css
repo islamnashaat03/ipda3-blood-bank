@@ -54,7 +54,7 @@ a .fa-whatsapp:hover{color: #1bd742;}
     bottom: -10px;
 }
 .upper-bar .item {margin-right:10px;font-size: 20px;color:#fefefe}
-.upper-bar span {font-size: 16px;color: #bc8d39;}
+.upper-bar .commented span {font-size: 16px;color: #bc8d39;}
 .upper-bar .dropdown {display: inline-block;}
 .upper-bar .dropdown .dropdown-toggle {
     background: none;

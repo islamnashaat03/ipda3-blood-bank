@@ -53,7 +53,7 @@ a .fa-whatsapp:hover{color: #1bd742;}
     bottom: -10px;
 }
 .upper-bar .item {margin-left:10px;font-size: 20px;color:#fefefe}
-.upper-bar span {font-size: 16px;color: #bc8d39;}
+.upper-bar .commented span {font-size: 16px;color: #bc8d39;}
 .upper-bar .dropdown {display: inline-block;}
 .upper-bar .dropdown .dropdown-toggle {
     background: none;
@@ -338,7 +338,7 @@ a .fa-whatsapp:hover{color: #1bd742;}
 .upper-footer .third-footer {margin-top: 40px;}
 .upper-footer .third-footer h2 {color: #cf1c21;font-size: 15px;font-weight: bold;margin-bottom: 30px;}
 .upper-footer .third-footer img {margin: 15px 0;height: 60px;}
-.upper-footer .third-footer img:hover {border: 2px soloid #cf1c21;}
+.upper-footer .third-footer img:hover {border: 2px solid #cf1c21;}
                                     /* END UPPER FOOTER  */
                                     /* START FOOTER  */
 .footer {background-color: #14171c;color:#d9dadb;padding: 10px;}
