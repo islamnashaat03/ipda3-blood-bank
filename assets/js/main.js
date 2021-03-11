@@ -53,16 +53,19 @@ $(function () {
 
 $("#governorates").change(function(){
     var governorateId = $("#governorates").val();
-    console.log(governorateId);
+    console.log("selected gov :"+governorateId);
+    $("#cities").empty();
+    var option = '<option value="">اختر المدينة </option>';
+    $('#cities').append(option);
     $.ajax({
-        url:'http://ipda3-tech.com/blood-bank/api/v1/cities?governorate_id='+governorateId,
+        url:'https://cors-anywhere.herokuapp.com/http://ipda3-tech.com/blood-bank/api/v1/cities?governorate_id='+governorateId,
         type: 'get',
         data:{},
         success: function(result){
             console.log("success");
-        $.each(result.data, function(index,value){
-            console.log(value);
-            var option = new option(city.name,city.id);
+        $.each(result.data, function(index,city){
+            console.log(city);
+            var option = '<option value="' +city.id+'">'+city.name+'</option>';
             $("#cities").append(option);
         });
         },
