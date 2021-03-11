@@ -189,8 +189,13 @@ a .fa-whatsapp:hover{color: #1bd742;}
     padding: 15px;
     border-radius: 105px;
     width: 100%;
-    
-     /*  */
+}
+.donations select {
+    background-image: url(../imgs/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 90%;
+    background-position-y: center;
 }
 .donations .custom-select-1 {position: relative;display: flex;}
 .donations .custom-select-1 i {border-left: 1px solid #eaeaea;}
@@ -426,35 +431,48 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     background-color: #fff;
     border: 2px solid #efefef;
     padding: 20px;
-    margin: 30px 60px;
+    margin: 30px 0;
+}
+.new-acc-2 .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    outline: none;
+    border: none;
+    background-image: url(../imgs/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 97%;
+    background-position-y: center;
 }
 .new-acc-2 .form-control {
     border-radius: 0;
     background-color: #fbfbfb;
     font-weight: bold;
     border: 1px solid #efefef;
-    padding: 20px;
     color:#616161;
-    width:85%;
     margin:40px auto;
-    padding:30px;
     font-size: 18px;
+    height: 55px;
 }
-.new-account-head-2 .form-group {text-align: center;}
-.new-account-head-2 button {
+.new-acc-2 .form-group a button {
+    width: 50%;
     background-color: #3ab54a;
     color: #e2ebe4;
     font-size: 25px;
     padding: 10px;
     border: #dfe1e0;
-    width: 50%
+    
 }
-.font-user {position: relative;}
-.font-user i {
-    position: absolute;
-    right: 100px;
-    top:18px;
-    font-size: 24px;
+.new-account-head-2 .form-group {text-align: center;}
+.font-user {
+    position: relative;
+    background-image: url(../imgs/calendar-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y:center ;
+    background-size: 20px;
 }
                                  /* END NEW ACCOUNT PAGE  */
                                  /* START ARTICLES DETAILS PAGE  */

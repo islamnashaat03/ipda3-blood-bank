@@ -45,10 +45,7 @@ $('.owl-articles').owlCarousel({
     }
 });
 $(function () {
-    $("#datepicker").datepicker();
-});
-$(function () {
-    $("#datepicker-2").datepicker();
+    $(".font-user").datepicker();
 });
 
 $("#governorates").change(function(){

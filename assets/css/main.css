@@ -189,21 +189,11 @@ a .fa-whatsapp:hover{color: #1bd742;}
 }
 .donations .custom-select-1 {position: relative;display: flex;}
 .donations .custom-select-1 i {border-right: 1px solid #eaeaea;}
-/* .donations .custom-select-1::after {
-    content: "\f0dd";
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 15px;
-    height: 100%;
-    line-height:55px;
-    
-} */
 .donations select {
     background-image: url(../imgs/chevron-down-solid.svg);
     background-repeat: no-repeat;
-    background-size: 28px;
-    background-position-x: left;
+    background-size: 20px;
+    background-position-x: 14px;
     background-position-y: center;
 }
 .donations select option[data-default] {color: #888;}   
@@ -414,12 +404,26 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     padding: 20px;
     margin: 30px 0;
 }
-.new-acc-2 .form-group a button {
-    width: 250px;
-    border: none;
+.new-acc-2 .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
     outline: none;
+    border: none;
+    background-image: url(../imgs/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 14px;
+    background-position-y: center;
+}
+.new-acc-2 .form-group a button {
+    width: 50%;
     background-color: #3ab54a;
-    color:#b2dfb6;
+    color: #e2ebe4;
+    font-size: 25px;
+    padding: 10px;
+    border: #dfe1e0;
     
 }
 
@@ -430,8 +434,9 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     border: 1px solid #efefef;
     color:#616161;
     margin:40px auto;
-    padding:9px;
     font-size: 18px;
+    height: 55px;
+    
 }
 .new-acc-2 .custom-select {
     border-radius: 0;
@@ -458,15 +463,10 @@ input[type=checkbox] { transform: scale(2);padding: 10px;height: 10px;}
     position: relative;
     background-image: url(../imgs/calendar-alt-solid.svg);
     background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 10px;
+    background-position-y: center;
 }
-/* .font-user::after{
-    content:"\f0dd";
-    position: absolute;
-    top:0;
-    left:0;
-    line-height: 62px;
-
-} */
                                  /* END NEW ACCOUNT PAGE  */
                                  /* START ARTICLES DETAILS PAGE  */
 .articles-details {
